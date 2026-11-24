@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: #172554;
+    color: white;
+    padding: 28px 20px;
+}
+
+.sidebar h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.sidebar p {
+    color: #bfdbfe;
+    font-size: 13px;
+}
+
+.sidebar a {
+    display: block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 13px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    color: #172554;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    height: 120px;
+}
+
+.stat-card h6 {
+    color: #64748b;
+}
+
+.stat-card h2 {
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.panel {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.panel h4 {
+    color: #172554;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.form-control,
+.form-select {
+    min-height: 42px;
+}
+
+.btn {
+    min-height: 42px;
+    font-weight: 600;
+}
+
+.table {
+    vertical-align: middle;
+}
+
+#analyticsResult {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+
+    main {
+        padding: 18px !important;
+    }
+}
+
+#marksChart,
+#attendanceChart {
+    width: 100% !important;
+    max-height: 300px !important;
+}
+
+canvas {
+    max-height: 300px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+}
